@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ghost Diaries</title>
+<link rel="icon" href="assets/ghost-wisp.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-ghost="contact">
+
+<img class="ghost-wisp" src="18.jpg" alt="" aria-hidden="true">
+<div class="grain-overlay" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="18.jpg" alt="">
+      Ghost Diaries
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="communities.html">Communities</a></li>
+      <li><a href="goals.html">Goals</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="tight">
+    <div class="wrap">
+      <p class="eyebrow">05 · Contact</p>
+      <h1>How to contact me</h1>
+      <p class="lede">Every real way to reach the person behind the ghost.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="credentials-grid">
+
+        <div class="credential-card" data-reveal>
+          <span class="credential-label">Name</span>
+          <span class="credential-value">Ghostbo4</span>
+        </div>
+
+        <a class="credential-card" href="https://x.com/gghostbo4" target="_blank" rel="noopener" data-reveal>
+          <img src="19.jpg" alt="" class="credential-icon">
+          <span class="credential-label">X / Twitter</span>
+          <span class="credential-value">@gghostbo4</span>
+        </a>
+
+        <a class="credential-card" href="https://t.me/Ghostbo4" target="_blank" rel="noopener" data-reveal>
+          <img src="20.png" alt="" class="credential-icon">
+          <span class="credential-label">Telegram</span>
+          <span class="credential-value">@Ghostbo4</span>
+        </a>
+
+        <div class="credential-card" data-reveal>
+          <img src="44.jpg" alt="" class="credential-icon">
+          <span class="credential-label">Discord</span>
+          <span class="credential-value">ghostbo4</span>
+        </div>
+
+      </div>
+      <p class="credential-note">Twitter and Telegram open directly. Discord usernames aren't links — add me by searching that handle in Discord.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Leave a note</p>
+        <h2>Feedback</h2>
+        <p style="color:var(--ink-soft); margin-top:8px;">This runs entirely in your browser — there's no server behind this site yet, so submissions reset on refresh and only you can see the chart update live. To actually collect responses, wire this form up to something like Formspree, Google Forms, or a small backend.</p>
+      </div>
+
+      <div class="feedback-panel" data-reveal>
+        <form id="feedbackForm" class="feedback-form">
+          <div class="star-rating" id="starRating" role="radiogroup" aria-label="Rating">
+            <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+            <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+            <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+            <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+            <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+          </div>
+          <textarea id="feedbackText" placeholder="What did you think of Ghost Diaries?" rows="3"></textarea>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Submit feedback</button>
+          <p id="feedbackThanks" class="feedback-thanks" hidden>Thanks — got it. (Remember: this session only.)</p>
+        </form>
+
+        <div class="feedback-chart-wrap">
+          <p class="eyebrow" style="margin-bottom:14px;">Ratings this session</p>
+          <div class="feedback-chart" id="feedbackChart">
+            <div class="chart-row"><span class="chart-label">5★</span><div class="chart-bar-track"><div class="chart-bar" data-bar="5"></div></div><span class="chart-count" data-count="5">0</span></div>
+            <div class="chart-row"><span class="chart-label">4★</span><div class="chart-bar-track"><div class="chart-bar" data-bar="4"></div></div><span class="chart-count" data-count="4">0</span></div>
+            <div class="chart-row"><span class="chart-label">3★</span><div class="chart-bar-track"><div class="chart-bar" data-bar="3"></div></div><span class="chart-count" data-count="3">0</span></div>
+            <div class="chart-row"><span class="chart-label">2★</span><div class="chart-bar-track"><div class="chart-bar" data-bar="2"></div></div><span class="chart-count" data-count="2">0</span></div>
+            <div class="chart-row"><span class="chart-label">1★</span><div class="chart-bar-track"><div class="chart-bar" data-bar="1"></div></div><span class="chart-count" data-count="1">0</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Ghost Diaries</span>
+    <a href="index.html">Back to home</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script src="feedback.js"></script>
+</body>
+</html>

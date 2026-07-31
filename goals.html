@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goals — Ghost Diaries</title>
+<link rel="icon" href="assets/ghost-wisp.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-ghost="goals">
+
+<img class="ghost-wisp" src="18.jpg" alt="" aria-hidden="true">
+<div class="grain-overlay" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="18.jpg" alt="">
+      Ghost Diaries
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="communities.html">Communities</a></li>
+      <li><a href="goals.html">Goals</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="tight">
+    <div class="wrap">
+      <p class="eyebrow">04 · Goals</p>
+      <h1>Where I'm still headed</h1>
+      <p class="lede">The diary isn't finished. Here's what I'm working toward next.</p>
+    </div>
+  </section>
+
+  <section class="tight" id="goalsLockSection">
+    <div class="wrap">
+      <div class="lock-panel" data-reveal>
+        <div class="lock-icon">🔒</div>
+        <h2>This page is locked</h2>
+        <p style="color:var(--ink-soft);">Enter the passcode to see it.</p>
+        <form id="goalsLockForm" class="lock-form">
+          <input type="password" id="goalsPasscode" placeholder="Passcode" autocomplete="off">
+          <button type="submit" class="btn btn-primary">Unlock</button>
+        </form>
+        <p id="goalsLockError" class="lock-error" hidden>That's not it — try again.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="goalsContentSection" hidden>
+    <div class="wrap" id="goalsContent"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Ghost Diaries</span>
+    <a href="index.html">Back to home</a>
+  </div>
+</footer>
+<script>
+  window.__goalsPayload = "ICAgICAgPGRpdiBjbGFzcz0iZ29hbHMtY29sdW1ucyI+CgogICAgICAgIDxkaXYgY2xhc3M9ImdvYWxzLWdyb3VwIiBkYXRhLXJldmVhbD4KICAgICAgICAgIDxoMj5MZWFybmluZzwvaDI+CiAgICAgICAgICA8dWwgY2xhc3M9ImdvYWwtbGlzdCI+CiAgICAgICAgICAgIDxsaT5GaW5pc2ggMjAgYm9va3M8L2xpPgogICAgICAgICAgICA8bGk+TGVhcm4gUHl0aG9uIGFuZCBDKys8L2xpPgogICAgICAgICAgICA8bGk+TGVhcm4gQUkgZW5naW5lZXJpbmc8L2xpPgogICAgICAgICAgICA8bGk+VW5kZXJzdGFuZCBob3cgbW9uZXkgd29ya3M8L2xpPgogICAgICAgICAgPC91bD4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzcz0iZ29hbHMtZ3JvdXAiIGRhdGEtcmV2ZWFsPgogICAgICAgICAgPGgyPkJ1aWxkaW5nICZhbXA7IGVhcm5pbmc8L2gyPgogICAgICAgICAgPHVsIGNsYXNzPSJnb2FsLWxpc3QiPgogICAgICAgICAgICA8bGk+QnV5IGEgYmlrZTwvbGk+CiAgICAgICAgICAgIDxsaT5FYXJuICQxMGs8L2xpPgogICAgICAgICAgICA8bGk+QnVpbGQgYSBicmFuZCDigJQgYnVpbGRpbmcgbXlzZWxmPC9saT4KICAgICAgICAgICAgPGxpPk5ldHdvcmsgd2l0aCBwZW9wbGU8L2xpPgogICAgICAgICAgICA8bGk+QnVpbGQgbXkgYWNjb3VudDwvbGk+CiAgICAgICAgICAgIDxsaT5HZXQgMTBrIGZvbGxvd2VyczwvbGk+CiAgICAgICAgICA8L3VsPgogICAgICAgIDwvZGl2PgoKICAgICAgPC9kaXY+";
+</script>
+<script src="goals-lock.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
